@@ -1,12 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-/* 
+body {
+    background-image: url(https://media.traveler.es/photos/6322d6c8f402c4c5dd576d67/16%3A9/w_2991%2Ch_1682%2Cc_limit/AndamiosNY-Global.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.poste {
+    width: 3vh;
+    height: 10vh;
+    background-color: rgb(190, 190, 77);    
+    margin: auto;
+    box-shadow: 10px 0px 50px 5px;
+    border: 5px solid rgb(77, 76, 76);
+}
 
-*/
+.semaforo {
+    width: 180px;
+    background-color: rgb(190, 190, 77);    
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 10px 0px 50px 5px;
+    border: 8px solid rgb(77, 76, 76);
+    padding: 20px;
+}
+
+.red {
+    background-color: red;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.green {
+    background-color: green;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.purple {
+    background-color: purple;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.glow-red {
+    box-shadow: 0px 0px 30px 20px rgb(156, 4, 4);
+}
+
+.glow-yellow {
+    box-shadow: 0px 0px 30px 20px rgb(228, 214, 15);
+}
+
+.glow-green {
+    box-shadow: 0px 0px 30px 20px rgb(47, 175, 75);
+}
+
+.glow-purple {
+    box-shadow: 0px 0px 30px 20px rgb(175, 47, 158);
+}
+
+.button {
+    margin-left: 15px;
+    background-color: darkorange;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container-button {
+    display: flex;
+    width: 100%;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .semaforo {
+        width: 150px;
+        padding: 15px;
+    }
+    .red, .yellow, .green, .purple {
+        width: 6vh;
+        height: 6vh;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .semaforo {
+        width: 120px;
+        padding: 10px;
+    }
+    .red, .yellow, .green, .purple {
+        width: 5vh;
+        height: 5vh;
+        margin-bottom: 10px;
+    }
+    .button {
+        padding: 8px;
+        margin-left: 10px;
+    }
+}
+
